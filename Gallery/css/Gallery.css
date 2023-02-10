@@ -1,0 +1,167 @@
+/*--------------Gallery Section-------------*/
+
+/*----------Main-------------*/
+
+body{
+    color: #fff;
+    background: url("../../images/Gallery.jpg") center center;
+    background-size: cover;
+}
+
+header{
+    padding: 24px 0;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px ;
+}
+
+footer{
+    padding: 23px 0;
+}
+
+/*-----------Header-----------*/
+
+header p{
+    font-weight: bold;
+    text-align: center;
+    background: #000;
+    border-radius: 5px;
+}
+
+header ul{
+    float: right;
+    padding: 0 7px 5px 0;
+}
+
+header ul li{
+    text-decoration: none;
+}
+
+header ul li a{
+    text-decoration: none;
+    border-radius: 5px;
+    border-style: groove;
+    font-style: italic;
+    padding: 10px 20px;
+    color: #fff;
+    background: black;
+}
+
+header ul li a:hover{
+    transition: ease-in 2s;
+    color: #000;
+    background: #ffffff;
+    text-shadow: 3px 4px 4px grey, 3px 4px 4px purple;
+}
+
+header h1{
+    text-align: center;
+    font-style: italic;
+    text-shadow: 4px 3px 5px navy, 2px 3px 3px grey;
+}
+
+header h2{
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 0 0 0;
+    color: #000;
+}
+
+/*---------Categories-----------*/
+
+.categories{
+    padding: 58px 0;
+}
+
+.category{
+    padding: 100px 50px;
+    margin: 5px 5px;
+    border-radius: 10px;
+    display: inline-flex;
+    width: 40%;
+    border-style: solid;
+}
+
+
+.category a{
+    text-decoration: none;
+    text-align: center;
+}
+
+.category a p{
+    text-align: center;
+    color: #fff;
+}
+
+.categories a{
+    height: 400px;
+    display:block;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    font-size: 30px;
+}
+
+.categories a:hover{
+    transition: ease-in-out 2s;
+    text-shadow: 3px 2px deepskyblue, 3px 2px grey;
+    background-color: cornflowerblue;
+}
+
+.Bed{
+    background-image: url(../../Gallery_links/Bed.jpg);
+    background-size: contain;
+}
+
+.cate{
+    color: blue;
+    padding: 20px 50px;
+}
+
+.Furniture{
+    background-image: url(../../Gallery_links/Furniture.jpg) ;
+    background-size: contain;
+    border-radius: 5px;
+
+}
+
+.Kitchen_Cabinet{
+    background-image: url(../../Gallery_links/Kitchen.jpg);
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.Tv_Stands{
+    background-image: url(../../Gallery_links/TV_stands.jpg);
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.Wadrope{
+    background-image: url(../../Gallery_links/Wadropes.jpg);
+    background-size: contain;
+    border-radius: 5px;
+}
+
+.Shelves{
+    background-image: url(../../Gallery_links/Shelfs.jpg);
+    background-position: center;
+    background-size: contain;
+    border-radius: 5px;
+}
+
+/*------- Footer-------*/
+footer{
+    text-align: center;
+    font-style: italic;
+    padding: 20px 20px;
+    background-color: black;
+    border-radius: 5px;
+}
+
+/*---------------Thanks to God Almigthy for a successful one------------*/

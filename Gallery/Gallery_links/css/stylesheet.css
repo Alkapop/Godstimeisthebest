@@ -1,0 +1,119 @@
+/*-----------Web developed by Poplampo David--------------*/
+/*---------Made with Love For Dad------------*/
+
+/*------Main----*/
+
+.main{
+    background-color: fff;
+    color: #000;
+}
+header{
+   padding: 80px 0;
+   text-align: center;
+   background: url(../../../images/julie-molliver-Z3vFp7szCAY-unsplash.jpg) center, rgba(0, 0, 0, 0.5);
+   background-size: cover;
+}
+
+section{
+   padding: 40px 0;
+   text-align: center;
+}
+
+.container{
+   margin: 0 auto;
+   padding: 0 20px;
+   max-width: 2000px;
+}
+
+footer{
+   padding: 32px 0;
+   text-align: center;
+   color: #fff;
+   background-color: black;
+}
+
+/*--------Bed Section---------*/
+.pic{
+    padding: 25px 40px;
+}
+
+.pic img{
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+
+
+/* --------------footer-----------------*/
+
+footer li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: inherit;
+    font-style: italic;
+}
+
+footer ul li a:hover{
+    transition: ease-in-out 1s;
+    text-shadow: 3px 4px 3px grey, 3px 4px 5px deepskyblue;
+}
+
+footer p{
+    font-size: 15px;
+    text-shadow: 3px 4px 3px grey, 3px 4px 5px deepskyblue;
+}
+
+
+
+/*------------On mobile devices--------------------*/
+
+@media screen and (max-width : 480px){
+    /*---------------Main---------------*/
+
+    .container{
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 900px;
+    }
+    
+    /*-------------Header---------------*/
+     header h1{
+         font-size: 32px;
+         margin: 0 0 8px 0;
+     }
+     
+     /*--------------Footer--------*/
+
+     footer ul li{
+        display: block;
+        padding-bottom: 5px;
+     }
+
+     footer ul li a{
+         font-size: 14px;
+     }
+
+     footer p{
+         font-size: 12px;
+     }
+
+     .pic{
+        padding: 25px 4px;
+        border-radius: 5px;
+    }
+    
+    .pic img{
+        width: 100%;
+        padding: 15px 5px;
+        border-radius: 5px;
+    }
+
+}    
+
+/*----------------Thank God For A successful one-----------------*/

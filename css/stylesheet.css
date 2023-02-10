@@ -1,0 +1,398 @@
+/*-----------Web developed by Poplampo David--------------*/
+/*---------Made with Love For Dad------------*/
+
+/*------Main----*/
+
+.main{
+     background: url(../images/julie-molliver-Z3vFp7szCAY-unsplash.jpg) center center;
+     background-size: cover;
+}
+header{
+    padding: 80px 0;
+    color: #fff;
+    text-align: center;
+    background: url(../images/homepage.jpg) center, rgba(0, 0, 0, 0.5);
+    background-size: cover;
+}
+
+section{
+    padding: 40px 0;
+    text-align: center;
+}
+
+.container{
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 2000px;
+}
+
+footer{
+    padding: 32px 0;
+    text-align: center;
+    color: #fff;
+    background-color: black;
+}
+
+/*-----------Header----------*/
+.message{
+    font-size: 18px;
+    padding: 5px 0 ;
+    background-color: black;
+}
+p{
+    font-size: 48px;
+    margin: 0 0 16px 0;
+}
+
+header p a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation{
+    padding: 24px 0;
+    background-color: white;
+    opacity: 0.7;
+    color: black;
+    position: fixed;
+    width: 96%;
+    padding-right: 5px 5px;
+    border-radius: 5PX;
+}
+
+.navigation nav{
+    align-self: left;
+
+}
+.navigation ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+.me{
+    font-size: 18px;
+    padding: 5px 0 0 0;
+}
+.mobile{
+    font-size: 18px;
+    background-color: #000;
+    font-style: italic;
+}
+
+.navigation li{
+    display: inline-block;
+    padding: 10px 10px
+}
+.navigation li a{
+    text-decoration: none;
+    color: #000;
+    font-style: italic;
+    float: left;
+}
+.navigation li a:hover{
+    color: deepskyblue;
+    transition: ease-in-out 1s;
+    text-shadow: 2px 3px 2px purple, 2px 3px 5px white ;
+}
+
+h1{
+    padding-bottom: 7px;
+}
+
+.branding{
+    font-size: 19px;
+    font-style: italic;
+    font-weight: lighter;
+    padding-bottom: 30px;
+
+}
+
+/*-----------Services-----------*/
+
+.Services a{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 50px 0px;
+    display: inline-block;
+    width: 40%;
+    text-decoration: none;
+}
+
+.Services a:hover{
+    transition: ease-in-out 2s;
+    text-shadow: 3px 2px deepskyblue, 3px 2px grey;
+    background-color: cornflowerblue;
+}
+
+.Services a p{
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.FineCarpentry{
+    background: grey;
+    opacity: 0.5;
+}
+
+.Kitchen{
+    background: dimgray;
+    opacity: 1;
+}
+
+.HandyServices{
+    background: slategrey;
+    opacity: 0.4;
+    color: #fff;
+}
+
+.Gallery{
+    padding-top: 0;
+    margin-top: 0;
+}
+
+/*----------About My Shop-----------------*/
+
+.discover_us{
+    background-color: #fff;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+}
+
+.discover{
+    padding-top: 30px;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    color: dodgerblue;
+    text-shadow: 4px 4px 2px grey, 4px 4px 2px deepskyblue;
+}
+
+.discover_us p{
+    font-size: 17px;
+    text-align: right;
+    word-spacing: 2px;
+    padding: 0 7px;
+}
+
+.discover_us a{
+    text-decoration: none;
+    font-weight: bold;
+    color: deepskyblue;
+}
+
+.discover_us a:hover{
+    transition: ease-in-out 2s;
+    color: rebeccapurple;
+    text-shadow: 3px 4px 2px grey;
+}
+
+.photos{
+    padding: 25px 40px;
+}
+
+.photos img{
+    width: 100%;
+    padding: 15px 15px;
+    border-radius: 10px;
+}
+
+.HoneNeeds{
+    padding: 5px 0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    color: #000;
+    margin: 0 auto;
+}
+
+.HoneNeeds p{
+    font-size: 17px;
+    word-spacing: 2px;
+    padding: 7px 7px;
+}
+
+/*----------------Quotes----------------*/
+
+.Quote{
+    background: url(../images/pickawood-t7nJyxD4ERo-unsplash\ \(1\).jpg) center center;
+    background-size: cover;
+    color: #fff;
+}
+
+.Quote h1{
+    color: black;
+}
+
+.Quote h2{
+    color: deepskyblue;
+}
+
+.Quote p{
+    margin: 0 0 5px 0;
+    padding-top: 0;
+    font-style: italic;
+    color: black;
+    text-shadow: 3px 4px 2px #fff, 3px 4px 2px grey;
+}
+
+cite{
+    color:purple ;
+}
+
+/*----------------Testimony-------------------*/
+
+.Testimony{
+    background-color: white;
+    color: #000;
+    text-align: left;
+}
+
+.Testimony h2{
+    font-size: 40px;
+}
+
+.Testimony h4{
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 25px;
+}
+
+.Testimony p{
+    font-size: 20px;
+    
+}
+
+
+.withnesses{
+    margin: 0 auto;
+}
+
+.withness{
+    align-items: center;
+    display: inline-block;
+}
+
+.withness img{
+    width: 15%;
+    padding: 0 50px;
+    border-radius: 5px;
+}
+
+.withness blockquote p{
+    color: deepskyblue;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.review{
+    background-color: grey;
+    padding: 30px 10px;
+    border-radius: 5px;
+}
+
+/*-------------Footer-------------*/
+
+footer ul{
+    padding: 5px 0;
+}
+
+footer ul li{
+    display: inline-block;
+}
+
+footer ul li a{
+    text-decoration: none;
+    padding: 5px 10px;
+    color: inherit;
+    font-style: italic;
+}
+
+footer ul li a:hover{
+    transition: ease-in-out 1s;
+    text-shadow: 3px 4px 3px grey, 3px 4px 5px deepskyblue;
+}
+
+footer p{
+    font-size: 15px;
+}
+
+/*----------------For Mobile devices--------------*/
+
+@media screen and (max-width : 480px){
+    /*---------------Main---------------*/
+
+    .container{
+        margin: 0 auto;
+        padding: 0 20px;
+        max-width: 900px;
+    }
+    
+    /*-------------Header---------------*/
+     header h1{
+         font-size: 32px;
+         margin: 0 0 8px 0;
+     }
+
+     /*-----------Services---------------*/
+
+     .Services a{
+         display: block;
+         width: 100%;
+     }
+
+     .Services .container{
+         padding-bottom: 5px;
+         margin-bottom: 5px;
+     }
+
+     /*----------------Quote-----------*/
+     .Quote p{
+        font-size: 40px;
+        padding-bottom: 10px;
+     }
+
+     .Quote cite{
+         color: #fff;
+     }
+
+     .withnesses h2{
+         font-size: 32px;
+     }
+
+     .withness .review{
+        font-size: 20px;
+        font-style: italic;
+     }
+
+     .withness .review cite{
+         color: #000;
+         padding-bottom: 5px;
+     }
+
+     .withness .name{
+         font-size: 18px;
+     }
+
+     .withness .profession{
+         font-size: 16px;
+     }
+     
+     /*--------------Footer--------*/
+
+     footer ul li{
+        display: block;
+        padding-bottom: 5px;
+     }
+
+     footer ul li a{
+         font-size: 14px;
+     }
+
+     footer p{
+         font-size: 12px;
+     }
+
+}    
+
+/*----------------Thank God For A successful one-----------------*/
