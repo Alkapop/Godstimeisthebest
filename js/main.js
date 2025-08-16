@@ -103,8 +103,16 @@ function initializeSpotlight() {
 
 // Enhance gallery with lightbox
 function initializeGalleryEnhancements() {
-    // Add lightbox to existing gallery images
+    // Add lightbox to existing gallery images (main page)
     document.querySelectorAll('.photos img').forEach(img => {
+        img.style.cursor = 'pointer';
+        img.addEventListener('click', function() {
+            openLightbox(this.src, this.alt);
+        });
+    });
+    
+    // Add lightbox to gallery page images
+    document.querySelectorAll('.pic img').forEach(img => {
         img.style.cursor = 'pointer';
         img.addEventListener('click', function() {
             openLightbox(this.src, this.alt);
