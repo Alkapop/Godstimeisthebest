@@ -129,6 +129,8 @@ header p a:hover {
 
 .navigation li {
     margin: 0 15px;
+    position: relative;
+    z-index: 1;
 }
 
 .navigation li a {
@@ -140,6 +142,8 @@ header p a:hover {
     transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    z-index: 2;
+    display: block;
 }
 
 .navigation li a::before {
@@ -158,6 +162,7 @@ header p a:hover {
     color: #fff;
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+    z-index: 3;
 }
 
 .navigation li a:hover::before {
