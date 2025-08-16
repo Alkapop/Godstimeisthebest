@@ -2,200 +2,362 @@
 /*---------Made with Love For Dad------------*/
 
 /*------Main----*/
-
-.main{
-     background: url(../images/julie-molliver-Z3vFp7szCAY-unsplash.jpg) center center;
-     background-size: cover;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-header{
-    padding: 80px 0;
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.main {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../images/julie-molliver-Z3vFp7szCAY-unsplash.jpg) center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    padding: 100px 0;
     color: #fff;
     text-align: center;
-    background: url(../images/homepage.jpg) center, rgba(0, 0, 0, 0.5);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/homepage.jpg) center;
     background-size: cover;
+    background-attachment: fixed;
+    position: relative;
 }
 
-section{
-    padding: 40px 0;
+section {
+    padding: 60px 0;
     text-align: center;
 }
 
-.container{
+.container {
     margin: 0 auto;
     padding: 0 20px;
-    max-width: 2000px;
+    max-width: 1200px;
 }
 
-footer{
-    padding: 32px 0;
+footer {
+    padding: 50px 0;
     text-align: center;
     color: #fff;
-    background-color: black;
+    background: linear-gradient(135deg, #1a1a1a, #333);
 }
 
 /*-----------Header----------*/
-.message{
-    font-size: 18px;
-    padding: 5px 0 ;
-    background-color: black;
+.message {
+    font-size: 16px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(30, 30, 30, 0.8));
+    border-radius: 25px;
+    margin: 10px auto;
+    max-width: 400px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
-p{
-    font-size: 48px;
+
+p {
+    font-size: 24px;
     margin: 0 0 16px 0;
 }
 
-header p a{
+header p a {
     text-decoration: none;
     color: #fff;
+    transition: color 0.3s ease;
 }
 
-.navigation{
-    padding: 24px 0;
-    background-color: white;
-    opacity: 0.7;
-    color: black;
+header p a:hover {
+    color: #667eea;
+}
+
+.navigation {
+    padding: 20px 0;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.9));
+    backdrop-filter: blur(10px);
+    color: #333;
     position: fixed;
-    width: 96%;
-    padding-right: 5px 5px;
-    border-radius: 5PX;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.navigation nav{
-    align-self: left;
-
+.navigation nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.navigation ul{
+
+.navigation ul {
     margin: 0;
     padding: 0;
     list-style: none;
-    float: right;
-}
-.me{
-    font-size: 18px;
-    padding: 5px 0 0 0;
-}
-.mobile{
-    font-size: 18px;
-    background-color: #000;
-    font-style: italic;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navigation li{
-    display: inline-block;
-    padding: 10px 10px
-}
-.navigation li a{
-    text-decoration: none;
-    color: #000;
-    font-style: italic;
-    float: left;
-}
-.navigation li a:hover{
-    color: deepskyblue;
-    transition: ease-in-out 1s;
-    text-shadow: 2px 3px 2px purple, 2px 3px 5px white ;
+.me {
+    font-size: 16px;
+    padding: 8px 0;
+    font-weight: 600;
+    color: #667eea;
 }
 
-h1{
-    padding-bottom: 7px;
-}
-
-.branding{
-    font-size: 19px;
-    font-style: italic;
-    font-weight: lighter;
-    padding-bottom: 30px;
-
-}
-
-/*-----------Services-----------*/
-
-.Services a{
-    font-family: 'Courier New', Courier, monospace;
-    padding: 50px 0px;
-    display: inline-block;
-    width: 40%;
-    text-decoration: none;
-}
-
-.Services a:hover{
-    transition: ease-in-out 2s;
-    text-shadow: 3px 2px deepskyblue, 3px 2px grey;
-    background-color: cornflowerblue;
-}
-
-.Services a p{
+.mobile {
+    font-size: 16px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
     color: #fff;
+    padding: 8px 16px;
+    border-radius: 20px;
+    margin: 5px;
+    font-weight: 500;
+    backdrop-filter: blur(10px);
+}
+
+.mobile a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation li {
+    margin: 0 15px;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.navigation li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transition: left 0.3s ease;
+    z-index: -1;
+}
+
+.navigation li a:hover {
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.navigation li a:hover::before {
+    left: 0;
+}
+
+h1 {
+    padding-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+}
+
+.branding {
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 400;
+    padding-bottom: 30px;
+    letter-spacing: 1px;
+    color: rgba(255, 255, 255, 0.9);
 }
 
-.FineCarpentry{
-    background: grey;
-    opacity: 0.5;
+/*-----------Services - Modern Grid Layout-----------*/
+
+.Services {
+    background: linear-gradient(135deg, #f8f9ff, #e8f0ff);
+    padding: 80px 0;
 }
 
-.Kitchen{
-    background: dimgray;
+.Services .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.Services a {
+    font-family: 'Inter', sans-serif;
+    padding: 40px 20px;
+    display: block;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 2px solid transparent;
+    background: #fff;
+}
+
+.Services a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.Services a:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
+    border-color: #667eea;
+}
+
+.Services a:hover::before {
     opacity: 1;
 }
 
-.HandyServices{
-    background: slategrey;
-    opacity: 0.4;
-    color: #fff;
+.Services a p {
+    color: #333;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    transition: color 0.4s ease;
+    letter-spacing: 0.5px;
+    line-height: 1.4;
 }
 
-.Gallery{
+.Services a:hover p {
+    color: #667eea;
+}
+
+.FineCarpentry {
+    background: linear-gradient(135deg, #fff, #f8f9ff);
+}
+
+.Kitchen {
+    background: linear-gradient(135deg, #fff, #f0f8ff);
+}
+
+.HandyServices {
+    background: linear-gradient(135deg, #fff, #f5f8ff);
+}
+
+.Gallery {
+    background: linear-gradient(135deg, #fff, #f8f0ff);
+}
+
+/*----------About My Shop - Modernized-----------------*/
+
+.discover_us {
+    background: linear-gradient(135deg, #fff, #f8f9ff);
+    color: #333;
+    font-family: 'Inter', sans-serif;
+    width: 100%;
+    padding: 80px 0;
+    position: relative;
+}
+
+.discover_us::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.05), rgba(118, 75, 162, 0.05));
+    pointer-events: none;
+}
+
+.discover {
     padding-top: 0;
-    margin-top: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -1px;
 }
 
-/*----------About My Shop-----------------*/
-
-.discover_us{
-    background-color: #fff;
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    width: 100%;
+.discover_us p {
+    font-size: 18px;
+    text-align: left;
+    word-spacing: 1px;
+    padding: 0 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #555;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.discover{
-    padding-top: 30px;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: bold;
-    color: dodgerblue;
-    text-shadow: 4px 4px 2px grey, 4px 4px 2px deepskyblue;
-}
-
-.discover_us p{
-    font-size: 17px;
-    text-align: right;
-    word-spacing: 2px;
-    padding: 0 7px;
-}
-
-.discover_us a{
+.discover_us a {
     text-decoration: none;
-    font-weight: bold;
-    color: deepskyblue;
+    font-weight: 600;
+    color: #667eea;
+    position: relative;
+    transition: color 0.3s ease;
 }
 
-.discover_us a:hover{
-    transition: ease-in-out 2s;
-    color: rebeccapurple;
-    text-shadow: 3px 4px 2px grey;
+.discover_us a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    transition: width 0.3s ease;
 }
 
-.photos{
-    padding: 25px 40px;
+.discover_us a:hover {
+    color: #764ba2;
 }
 
-.photos img{
+.discover_us a:hover::after {
     width: 100%;
-    padding: 15px 15px;
-    border-radius: 10px;
+}
+
+.photos {
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.photos img {
+    width: 100%;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    aspect-ratio: 4/3;
+    object-fit: cover;
+}
+
+.photos img:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 20px 50px rgba(102, 126, 234, 0.2);
 }
 
 .HoneNeeds{

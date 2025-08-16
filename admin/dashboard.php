@@ -102,7 +102,7 @@ try {
                              alt="<?php echo htmlspecialchars($item['name']); ?>">
                         <div class="furniture-item-content">
                             <h3><?php echo htmlspecialchars($item['name']); ?></h3>
-                            <div class="price">$<?php echo number_format($item['price'], 2); ?></div>
+                            <div class="price">GHS <?php echo number_format($item['price'], 2); ?></div>
                             <div class="category"><?php echo htmlspecialchars($item['category_name']); ?></div>
                         </div>
                     </div>
@@ -123,7 +123,7 @@ try {
                              onerror="this.src='../images/placeholder.jpg'">
                         <div class="furniture-item-content">
                             <h3><?php echo htmlspecialchars($item['name']); ?></h3>
-                            <div class="price">$<?php echo number_format($item['price'], 2); ?></div>
+                            <div class="price">GHS <?php echo number_format($item['price'], 2); ?></div>
                             <div class="category"><?php echo htmlspecialchars($item['category_name'] ?? 'No Category'); ?></div>
                             <div class="actions">
                                 <a href="furniture.php?action=edit&id=<?php echo $item['id']; ?>" class="btn btn-primary">Edit</a>

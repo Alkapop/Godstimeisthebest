@@ -1,167 +1,282 @@
-/*--------------Gallery Section-------------*/
+/*--------------Gallery Section - Modernized-------------*/
 
 /*----------Main-------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-body{
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
     color: #fff;
-    background: url("../../images/Gallery.jpg") center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/Gallery.jpg") center center;
     background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
 }
 
-header{
-    padding: 24px 0;
+header {
+    padding: 40px 0;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.container{
+.container {
     margin: 0 auto;
-    padding: 0 20px ;
+    padding: 0 20px;
+    max-width: 1200px;
 }
 
-footer{
-    padding: 23px 0;
+footer {
+    padding: 30px 0;
+    margin-top: 60px;
 }
 
 /*-----------Header-----------*/
-
-header p{
-    font-weight: bold;
+header p {
+    font-weight: 600;
     text-align: center;
-    background: #000;
-    border-radius: 5px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8), rgba(30, 30, 30, 0.8));
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 16px;
+    letter-spacing: 0.5px;
 }
 
-header ul{
-    float: right;
-    padding: 0 7px 5px 0;
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 20px 0;
 }
 
-header ul li{
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li a {
     text-decoration: none;
-}
-
-header ul li a{
-    text-decoration: none;
-    border-radius: 5px;
-    border-style: groove;
-    font-style: italic;
-    padding: 10px 20px;
+    border-radius: 25px;
+    padding: 12px 24px;
     color: #fff;
-    background: black;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+    border: 2px solid transparent;
 }
 
-header ul li a:hover{
-    transition: ease-in 2s;
-    color: #000;
-    background: #ffffff;
-    text-shadow: 3px 4px 4px grey, 3px 4px 4px purple;
+header ul li a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.4);
+    background: linear-gradient(135deg, #764ba2, #667eea);
+    border-color: rgba(255, 255, 255, 0.2);
 }
 
-header h1{
+header h1 {
     text-align: center;
-    font-style: italic;
-    text-shadow: 4px 3px 5px navy, 2px 3px 3px grey;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin: 30px 0 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
-header h2{
+header h2 {
     text-align: center;
-    font-weight: bold;
+    font-weight: 600;
     text-transform: uppercase;
-    padding: 20px 0 0 0;
-    color: #000;
-}
-
-/*---------Categories-----------*/
-
-.categories{
-    padding: 58px 0;
-}
-
-.category{
-    padding: 100px 50px;
-    margin: 5px 5px;
-    border-radius: 10px;
-    display: inline-flex;
-    width: 40%;
-    border-style: solid;
-}
-
-
-.category a{
-    text-decoration: none;
-    text-align: center;
-}
-
-.category a p{
-    text-align: center;
+    padding: 20px 0;
     color: #fff;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.categories a{
-    height: 400px;
-    display:block;
+/*---------Categories - Modern Grid Layout-----------*/
+.categories {
+    padding: 60px 0;
+}
+
+.categories .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+}
+
+.categories a {
+    height: 300px;
+    display: block;
     text-decoration: none;
     color: #fff;
     text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    font-style: italic;
-    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid rgba(255, 255, 255, 0.1);
 }
 
-.categories a:hover{
-    transition: ease-in-out 2s;
-    text-shadow: 3px 2px deepskyblue, 3px 2px grey;
-    background-color: cornflowerblue;
+.categories a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.1), rgba(118, 75, 162, 0.1));
+    transition: all 0.4s ease;
 }
 
-.Bed{
+.categories a:hover {
+    transform: translateY(-15px) scale(1.02);
+    box-shadow: 0 20px 60px rgba(102, 126, 234, 0.4);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.categories a:hover::before {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.3), rgba(118, 75, 162, 0.3));
+}
+
+.cate {
+    position: relative;
+    z-index: 2;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5));
+    padding: 20px;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(5px);
+    transition: all 0.4s ease;
+}
+
+.categories a:hover .cate {
+    background: linear-gradient(135deg, rgba(102, 126, 234, 0.8), rgba(118, 75, 162, 0.8));
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+}
+
+/* Individual category backgrounds with better positioning */
+.Bed {
     background-image: url(../../Gallery_links/Bed.jpg);
-    background-size: contain;
-}
-
-.cate{
-    color: blue;
-    padding: 20px 50px;
-}
-
-.Furniture{
-    background-image: url(../../Gallery_links/Furniture.jpg) ;
-    background-size: contain;
-    border-radius: 5px;
-
-}
-
-.Kitchen_Cabinet{
-    background-image: url(../../Gallery_links/Kitchen.jpg);
-    background-size: contain;
-    border-radius: 5px;
-}
-
-.Tv_Stands{
-    background-image: url(../../Gallery_links/TV_stands.jpg);
-    background-size: contain;
-    border-radius: 5px;
-}
-
-.Wadrope{
-    background-image: url(../../Gallery_links/Wadropes.jpg);
-    background-size: contain;
-    border-radius: 5px;
-}
-
-.Shelves{
-    background-image: url(../../Gallery_links/Shelfs.jpg);
+    background-size: cover;
     background-position: center;
-    background-size: contain;
-    border-radius: 5px;
 }
 
-/*------- Footer-------*/
-footer{
+.Furniture {
+    background-image: url(../../Gallery_links/Furniture.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Kitchen_Cabinet {
+    background-image: url(../../Gallery_links/Kitchen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Tv_Stands {
+    background-image: url(../../Gallery_links/TV_stands.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Wadrope {
+    background-image: url(../../Gallery_links/Wadropes.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Shelves {
+    background-image: url(../../Gallery_links/Shelfs.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*------- Footer - Modern Style -------*/
+footer {
     text-align: center;
-    font-style: italic;
-    padding: 20px 20px;
-    background-color: black;
-    border-radius: 5px;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.9), rgba(30, 30, 30, 0.9));
+    border-radius: 20px;
+    margin: 0 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/*---------------Thanks to God Almigthy for a successful one------------*/
+footer p {
+    margin: 5px 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+        margin: 20px 0 15px;
+    }
+    
+    header h2 {
+        font-size: 1.5rem;
+    }
+    
+    .categories .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+    
+    .categories a {
+        height: 250px;
+        font-size: 24px;
+    }
+    
+    header ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    header ul li a {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .categories a {
+        height: 200px;
+        font-size: 20px;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .cate {
+        padding: 15px;
+    }
+}
+
+/*---------------Thanks to God Almighty for a successful one------------*/
