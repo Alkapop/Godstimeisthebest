@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Beds",
+        "description": "Custom beds and bedroom furniture",
+        "image_url": "images\/beds.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Kitchen Cabinets",
+        "description": "Custom kitchen cabinets and storage",
+        "image_url": "images\/kitchen.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Wardrobes",
+        "description": "Custom wardrobes and closets",
+        "image_url": "images\/wardrobe.jpg"
+    },
+    {
+        "id": 4,
+        "name": "TV Stands",
+        "description": "Entertainment centers and TV stands",
+        "image_url": "images\/tv-stand.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Shelves",
+        "description": "Custom shelving solutions",
+        "image_url": "images\/shelves.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Furniture",
+        "description": "General furniture pieces",
+        "image_url": "images\/furniture.jpg"
+    }
+]

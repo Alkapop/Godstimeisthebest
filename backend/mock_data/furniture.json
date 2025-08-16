@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "Luxury King Bed",
+        "description": "Handcrafted wooden king size bed with elegant finish",
+        "category_id": 1,
+        "category_name": "Beds",
+        "price": 1200,
+        "is_featured": true,
+        "is_spotlight": true,
+        "main_image": "images\/12.jpg",
+        "created_at": "2025-08-16 19:58:39",
+        "updated_at": "2025-08-16 19:58:39"
+    },
+    {
+        "id": 2,
+        "name": "Custom Kitchen Cabinet Set",
+        "description": "Complete kitchen cabinet solution with modern design",
+        "category_id": 2,
+        "category_name": "Kitchen Cabinets",
+        "price": 2500,
+        "is_featured": true,
+        "is_spotlight": true,
+        "main_image": "images\/39.jpg",
+        "created_at": "2025-08-16 19:58:39",
+        "updated_at": "2025-08-16 19:58:39"
+    },
+    {
+        "id": 3,
+        "name": "Walk-in Wardrobe",
+        "description": "Custom wardrobe with multiple compartments",
+        "category_id": 3,
+        "category_name": "Wardrobes",
+        "price": 1800,
+        "is_featured": true,
+        "is_spotlight": true,
+        "main_image": "images\/72.jpg",
+        "created_at": "2025-08-16 19:58:39",
+        "updated_at": "2025-08-16 19:58:39"
+    }
+]
