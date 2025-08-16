@@ -231,7 +231,7 @@ function createSpotlightSection(items) {
                         <div class="spotlight-content">
                             <h3>${item.name}</h3>
                             <p>${item.description}</p>
-                            <div class="spotlight-price">$${parseFloat(item.price).toFixed(2)}</div>
+                            <div class="spotlight-price">GHS ${parseFloat(item.price).toFixed(2)}</div>
                         </div>
                     </div>
                 `).join('')}

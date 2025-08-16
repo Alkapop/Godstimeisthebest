@@ -97,7 +97,7 @@ if ($action === 'edit' && isset($_GET['id'])) {
                 
                 <div class="form-grid">
                     <div class="form-group">
-                        <label for="price">Price ($)</label>
+                        <label for="price">Price (GHS)</label>
                         <input type="number" id="price" name="price" step="0.01" min="0"
                                value="<?php echo $edit_item['price'] ?? ''; ?>">
                     </div>
@@ -159,7 +159,7 @@ if ($action === 'edit' && isset($_GET['id'])) {
                          onerror="this.src='../images/placeholder.jpg'">
                     <div class="furniture-item-content">
                         <h3><?php echo htmlspecialchars($item['name']); ?></h3>
-                        <div class="price">$<?php echo number_format($item['price'], 2); ?></div>
+                        <div class="price">GHS <?php echo number_format($item['price'], 2); ?></div>
                         <div class="category"><?php echo htmlspecialchars($item['category_name'] ?? 'No Category'); ?></div>
                         
                         <div style="margin: 10px 0;">
