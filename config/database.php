@@ -8,7 +8,7 @@ class Database {
     private $host = 'localhost';
     private $db_name = 'furniture_shop';
     private $username = 'root';
-    private $password = '';  // Changed from 'root' to empty string for better compatibility
+    private $password = 'root';  // Changed from 'root' to empty string for better compatibility
     private $conn;
 
     public function getConnection() {

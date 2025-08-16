@@ -10,7 +10,7 @@ echo "<h2>Furniture Shop Database Setup</h2>\n";
 
 try {
     // First, try to connect without specifying database to create it
-    $conn = new PDO("mysql:host=localhost", "root", "");
+    $conn = new PDO("mysql:host=localhost", "root", "root");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     
     // Read and execute the schema file
