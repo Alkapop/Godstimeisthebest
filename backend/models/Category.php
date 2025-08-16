@@ -4,18 +4,42 @@
  */
 
 require_once '../config/database.php';
+require_once __DIR__ . '/../MockDatabase.php';
 
 class Category {
     private $conn;
     private $table_name = "categories";
+    private $mockDb;
+    private $useMockDb = false;
 
     public function __construct() {
-        $database = new Database();
-        $this->conn = $database->getConnection();
+        try {
+            $database = new Database();
+            $this->conn = $database->getConnection();
+            
+            // Test the connection
+            if (!$this->conn) {
+                throw new Exception("Database connection failed");
+            }
+            
+            // Test a simple query to ensure database is working
+            $stmt = $this->conn->prepare("SELECT 1");
+            $stmt->execute();
+            
+        } catch (Exception $e) {
+            // If database connection fails, use mock database
+            $this->useMockDb = true;
+            $this->mockDb = new MockDatabase();
+            error_log("Using mock database for categories due to connection failure: " . $e->getMessage());
+        }
     }
 
     // Get all categories
     public function getAll() {
+        if ($this->useMockDb) {
+            return $this->mockDb->getCategories();
+        }
+        
         $query = "SELECT * FROM " . $this->table_name . " ORDER BY name ASC";
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
