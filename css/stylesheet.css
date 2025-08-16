@@ -861,12 +861,38 @@ footer p{
     .mobile-menu-toggle {
         display: block;
         position: absolute;
-        top: 10px;
+        top: 15px;
         right: 20px;
+        z-index: 1001;
+        background: rgba(255, 255, 255, 0.9);
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
     
     .navigation nav ul {
         display: none;
+    }
+    
+    .navigation nav.mobile-open ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+        padding: 60px 20px 20px;
+    }
+    
+    .navigation nav.mobile-open ul li {
+        margin: 0;
+    }
+    
+    .navigation nav.mobile-open ul li a {
+        font-size: 20px;
+        padding: 15px 25px;
+        display: block;
+        border-radius: 30px;
+        background: rgba(255, 255, 255, 0.9);
+        margin-bottom: 10px;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     }
     
     .spotlight-item {
@@ -886,6 +912,169 @@ footer p{
     .photos {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 15px;
+    }
+    
+    /* Better mobile typography */
+    h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin-top: 40px;
+    }
+    
+    .discover {
+        font-size: 2rem;
+    }
+    
+    .Services .container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Additional responsive breakpoints */
+@media screen and (max-width: 480px) {
+    .container {
+        padding: 0 10px;
+        max-width: 100%;
+    }
+    
+    header h1 {
+        font-size: 1.8rem;
+        margin: 0 0 8px 0;
+        line-height: 1.1;
+    }
+    
+    .branding {
+        font-size: 16px;
+        padding-bottom: 20px;
+    }
+    
+    .Services a {
+        display: block;
+        width: 100%;
+        padding: 30px 15px;
+    }
+    
+    .Services .container {
+        padding-bottom: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .Services a p {
+        font-size: 18px;
+    }
+    
+    .Quote p {
+        font-size: 24px;
+        padding-bottom: 10px;
+    }
+    
+    .Quote cite {
+        color: #fff;
+    }
+    
+    .withnesses h2 {
+        font-size: 24px;
+    }
+    
+    .withness .review {
+        font-size: 16px;
+        font-style: italic;
+        padding: 20px 10px;
+    }
+    
+    .withness .review cite {
+        color: #000;
+        padding-bottom: 5px;
+    }
+    
+    .withness .name {
+        font-size: 16px;
+    }
+    
+    .withness .profession {
+        font-size: 14px;
+    }
+    
+    .photos {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    
+    .photos img {
+        height: 120px;
+    }
+    
+    footer ul li {
+        display: block;
+        padding-bottom: 5px;
+    }
+    
+    footer ul li a {
+        font-size: 14px;
+    }
+    
+    footer p {
+        font-size: 12px;
+    }
+    
+    .spotlight-content h3 {
+        font-size: 20px;
+    }
+    
+    .spotlight-content p {
+        font-size: 14px;
+    }
+    
+    .spotlight-price {
+        font-size: 18px;
+    }
+    
+    .mobile-menu-toggle {
+        top: 10px;
+        right: 15px;
+    }
+}
+
+/* Tablet responsive styles */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .Services .container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .photos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+    
+    .spotlight-item {
+        flex-direction: row;
+    }
+    
+    .spotlight-item img,
+    .spotlight-content {
+        width: 50%;
+    }
+}
+
+/* Large mobile landscape */
+@media screen and (min-width: 481px) and (max-width: 640px) and (orientation: landscape) {
+    header {
+        padding: 60px 0;
+    }
+    
+    h1 {
+        font-size: 2.2rem;
+        margin-top: 30px;
+    }
+    
+    .Services .container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 

@@ -166,21 +166,46 @@ function initializeMobileMenu() {
     const toggleBtn = document.createElement('button');
     toggleBtn.className = 'mobile-menu-toggle';
     toggleBtn.innerHTML = '☰';
+    toggleBtn.setAttribute('aria-label', 'Toggle mobile menu');
     toggleBtn.style.cssText = `
         display: none;
         background: none;
         border: none;
         font-size: 24px;
-        color: #000;
+        color: #333;
         cursor: pointer;
         padding: 10px;
+        z-index: 1001;
     `;
     
     navigation.appendChild(toggleBtn);
     
     toggleBtn.addEventListener('click', function() {
         const nav = navigation.querySelector('nav');
-        nav.classList.toggle('mobile-open');
+        const isOpen = nav.classList.contains('mobile-open');
+        
+        if (isOpen) {
+            nav.classList.remove('mobile-open');
+            toggleBtn.innerHTML = '☰';
+            toggleBtn.setAttribute('aria-label', 'Open mobile menu');
+            document.body.style.overflow = '';
+        } else {
+            nav.classList.add('mobile-open');
+            toggleBtn.innerHTML = '✕';
+            toggleBtn.setAttribute('aria-label', 'Close mobile menu');
+            document.body.style.overflow = 'hidden';
+        }
+    });
+    
+    // Close menu when clicking on navigation links
+    navigation.querySelectorAll('nav ul li a').forEach(link => {
+        link.addEventListener('click', function() {
+            const nav = navigation.querySelector('nav');
+            nav.classList.remove('mobile-open');
+            toggleBtn.innerHTML = '☰';
+            toggleBtn.setAttribute('aria-label', 'Open mobile menu');
+            document.body.style.overflow = '';
+        });
     });
     
     // Show/hide toggle button based on screen size
@@ -191,6 +216,8 @@ function initializeMobileMenu() {
             toggleBtn.style.display = 'none';
             const nav = navigation.querySelector('nav');
             nav.classList.remove('mobile-open');
+            toggleBtn.innerHTML = '☰';
+            document.body.style.overflow = '';
         }
     }
     
